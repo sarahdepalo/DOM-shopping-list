@@ -7,23 +7,28 @@ const myList = document.querySelector('#myList');
 
 
 function grabValues() {
-    const userInput = document.querySelectorAll('input');
-    const userArray = Array.from(userInput);
 
-    // Creates the Title:
+    //Creates title:
     const titleElement = document.createElement('h2');
     titleElement.innerText = 'My Shopping List';
     myList.append(titleElement);
 
-    // Creates the ul 
+    //Creates ul:
     const ulElement = document.createElement('ul');
     ulElement.classList.add('listItems');
     myList.append(ulElement);
+
+    // empties the list each time. 
+    // ulElement.innerHTML = "";
+
+    const userInput = document.querySelectorAll('input');
+    const userArray = Array.from(userInput);
+
     userArray.forEach((item) => {
         const liItem = document.createElement('li');
         liItem.innerText = item.value;
         ulElement.append(liItem);
-        console.log(liItem);
+  
     })
 
 }
