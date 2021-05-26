@@ -75,3 +75,18 @@ section {
   max-width: 60rem;
   margin: 0 auto;
 }
+
+
+#myList {
+ 
+  margin: 0 auto;
+}
+
+.listItems {
+  font-size: 17px;
+}
+
+h2 {
+  color: #64b448;
+}
+
